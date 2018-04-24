@@ -1,0 +1,13 @@
+@startuml
+       User -> AppHomePage: Request to Login
+       AppHomePage -> System: Request User Login
+
+       System --> AppHomePage: Return Login Form
+       User -> AppHomePage: Fills Out Login Form
+       User -> AppHomePage: Submits Form
+       AppHomePage -> System: Submits Form
+
+       System -> System: Logs user in
+       System --> UserHomePage: Returns user Home Page
+       User -> UserHomePage: Views User Home Page
+@enduml

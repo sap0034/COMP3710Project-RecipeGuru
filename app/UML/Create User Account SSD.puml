@@ -1,0 +1,15 @@
+@startuml
+User -> AppHomePage: Request New Account
+AppHomePage -> System: Request User Account
+
+System --> AppHomePage: Return New Account Form
+User -> AppHomePage: Fills Out Form
+User -> AppHomePage: Submits Form
+AppHomePage -> System: Submits Form
+
+System -> System: Creates New Account
+System --> AppHomePage: Return New Account Confirmation
+AppHomePage --> UserHomePage: Return User Home Page
+User -> UserHomePage: Views User Home Page
+
+@enduml

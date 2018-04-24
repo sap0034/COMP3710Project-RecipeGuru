@@ -1,0 +1,15 @@
+@startuml
+                     User -> UserHomePage: Selects a recipe and request to edit
+                     UserHomePage -> System: Request to Edit Recipe
+                     System -> System: Finds recipe by ID
+                     System --> UserHomePage: Return Recipe Details to be Edited
+
+                     User -> UserHomePage: Edits Recipe
+                     User -> UserHomePage: Submits Recipe Changes
+                     UserHomePage -> System: Submits Recipe Changes
+
+                     System -> System: Updates recipe
+                     System --> UserHomePage: Returns Recipe Update Confirmation
+                     User -> UserHomePage: Views Confirmation
+
+                     @enduml

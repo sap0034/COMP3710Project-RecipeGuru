@@ -1,0 +1,11 @@
+@startuml
+       User -> UserHomePage: Click button to add new Recipe
+       UserHomePage -> System: Request New Recipe Form
+       System --> UserHomePage: Return New Recipe Form
+
+       User -> UserHomePage: Fills out Recipe Information
+       User -> UserHomePage: Adds ingredients
+       User -> UserHomePage: Adds Steps
+       User -> UserHomePage: Submits Form
+
+       @enduml

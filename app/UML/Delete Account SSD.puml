@@ -1,0 +1,15 @@
+@startuml
+       User -> UserHomePage: Go to Account Settings
+       UserHomePage -> System: Request Account Settings Page
+       System --> AccountSettingsView: Return Account Settings Page
+       User -> AccountSettingsView: Views Account Settings
+
+       User -> AccountSettingsView: Request Delete Account
+       AccountSettingsView -> System: Request Delete Account
+
+       System -> System: Finds User Account
+       System -> System: Deletes User Account
+       System --> AppHomePage: Returns App Homepage
+       User -> AppHomePage: Views App Home Page
+
+       @enduml
