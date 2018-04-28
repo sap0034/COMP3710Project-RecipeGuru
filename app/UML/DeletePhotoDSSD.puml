@@ -1,5 +1,4 @@
 @startuml
-User -> UserHomePage: Clicks button to Edit Recipe
 User -> UserHomePage: Selects Photo and request deletion
 UserHomePage -> System: Requests to Delete Photo
 System --> UserHomePage: Returns modal for User to confirm they with to delete
