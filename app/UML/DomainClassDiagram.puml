@@ -1,6 +1,6 @@
 @startuml
 
-title Relationships - Class Diagram
+title Relationships - Domain Class Diagram
 
 class Recipe {
   +name
