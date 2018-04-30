@@ -41,23 +41,26 @@ public class Account {
         return this.AccountID;
     }
 
-    public void getFirstName() {
+    public void setFirstName(String FirstName) {
         this.FirstName = FirstName;
     }
+    public String getFirstName() {return this.FirstName; }
 
+    public void setLastName(String LastName) {this.LastName = LastName;}
+    public String getLastName() {return this.LastName;}
 
+    public void setEmailAddress(String EmailAddress) {this.EmailAddress = EmailAddress;}
+    public String getEmailAddress() {
+        return this.EmailAddress;
+    }
 
+    public void setAccountCreatedDatetime(String AccountCreatedDatetime) {this.AccountCreatedDatetime = AccountCreatedDatetime;}
+    public String getAccountCreatedDatetime() {return this.AccountCreatedDatetime;}
 
+    public void setIsArchived(int isArchived) {this.isArchived = isArchived;}
+    public int getIsArchived() {return this.isArchived;}
 
-
-
-
-
-
-
-
-
-
-
+    public void setPassword(String Password) {this.Password = Password;}
+    public String getPassword() {return this.Password;}
 
 }
